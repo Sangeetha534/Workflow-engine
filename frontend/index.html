@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Workflow Engine</h1>
+        </header>
+
+        <main>
+            <section class="panel">
+                <h2>1. Select Workflow</h2>
+                <div class="actions">
+                    <button id="load-workflows-btn">Load Workflows</button>
+                    <select id="workflow-select">
+                        <option value="">-- Select --</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>2. Workflow Steps & Rules</h2>
+                <div id="steps-container">
+                    <p>Select a workflow to view steps.</p>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>3. Execute Workflow</h2>
+                <div class="form-group">
+                    <label>Start Step ID:</label>
+                    <input type="number" id="start-step-id" placeholder="e.g. 1">
+                </div>
+                <div class="form-group">
+                    <label>Context Data (JSON):</label>
+                    <textarea id="execution-data" rows="4">{"amount": 150, "country": "US", "department": "Finance"}</textarea>
+                </div>
+                <button id="execute-btn" class="primary">Execute Workflow</button>
+            </section>
+
+            <section class="panel result-panel">
+                <h2>Execution Result</h2>
+                <div id="execution-result">
+                    <p>No execution yet.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

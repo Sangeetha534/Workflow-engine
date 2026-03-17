@@ -1,0 +1,23 @@
+# Database
+*.db
+*.sqlite
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Debug/temp files
+test_hang.py
+*.log
+
+# IDE
+.vscode/
+.idea/
