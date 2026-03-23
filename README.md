@@ -171,6 +171,3 @@ Rules are evaluated in **priority order** (highest first). The first matching ru
 
 ---
 
-## 📄 License
-
-MIT License — free to use, modify, and distribute.
